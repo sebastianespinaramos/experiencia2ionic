@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title color="dark">Breeds</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaulttref="/"
+        text="back"
+        color="danger"
+        mode="ios"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+<ion-item *ngfor="let breeds of breeds">
+  {{breeds.id}}-{{breeds.name}}
+
+  
+</ion-item>
+</ion-content>
